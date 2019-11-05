@@ -1,1 +1,1 @@
-console.log('Hello!')
+import './pages/index.css';

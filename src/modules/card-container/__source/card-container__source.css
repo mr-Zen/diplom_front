@@ -1,0 +1,12 @@
+.card-container__source {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #B6BCBF;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}

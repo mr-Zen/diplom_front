@@ -1,0 +1,13 @@
+@import url('./__img/card-container__img.css');
+@import url('./__date/card-container__date.css');
+@import url('./__title/card-container__title.css');
+@import url('./__subtitle/card-container__subtitle.css');
+@import url('./__source/card-container__source.css');
+
+.card-container {
+    border: 1px solid blue;
+    width: 400px;
+    height: 576px;
+    border-radius: 10px;
+    position: relative;
+}

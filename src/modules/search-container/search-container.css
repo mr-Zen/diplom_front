@@ -1,0 +1,9 @@
+@import url(./__input/search-container__input.css);
+@import url(./__btn/search-container__btn.css);
+
+.search-container {
+    width: 608px;
+    margin: auto;
+    margin-top: 64px;
+    position: relative;
+}

@@ -1,0 +1,7 @@
+@import url(../autor/autor.css);
+
+.autor-container {
+    width: 1232px;
+    height: 624px;
+    margin: auto;
+}

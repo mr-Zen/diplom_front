@@ -1,0 +1,8 @@
+.preloader__box {
+    width: 1232px;
+    margin: auto;
+    position: relative;
+    height: 282px;
+    display: flex;
+    flex-direction: column-reverse;
+}

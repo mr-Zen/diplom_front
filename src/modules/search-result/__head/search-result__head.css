@@ -1,0 +1,7 @@
+.search-result__head {
+    display: flex;
+    justify-content: space-between;
+    width: 1232px;
+    margin: 0 auto 64px;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+@import url(./__container/footer__container.css);
+@import url(./__copy/footer__copy.css);
+@import url(./__menu-item/footer__menu-item.css);
+@import url(./__social-icon/footer__social-icon.css);
+
+.footer {
+    width: 1232px;
+    height: 80px;
+    margin: auto;
+}

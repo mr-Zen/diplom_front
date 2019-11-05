@@ -1,0 +1,10 @@
+@import url('./__head/search-result__head.css');
+@import url('./__title/search-result__title.css');
+@import url('./__subtitle/search-result__subtitle.css');
+@import url('./__btn-box/search-result__btn-box.css');
+@import url('./__btn/search-result__btn.css');
+
+.search-result {
+    background: #F5F6F7;
+    padding-top: 80px;
+}

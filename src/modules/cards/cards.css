@@ -1,0 +1,15 @@
+.cards {
+    /* border: solid 1px red;
+    display: flex;
+    width: 1228px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 16px 16px;
+  justify-content: center;
+  width: 1232px;
+  margin: auto;
+}

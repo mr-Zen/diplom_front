@@ -11,7 +11,9 @@ const isDev = process.env.NODE_ENV === 'development';
 // создаем переменную для development-сборки
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { main: './src/index.js',
+        analytics: './src/analytics.js'
+            },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -26,6 +28,8 @@ module.exports = {
                     test: /\.css$/i, // применять это правило только к CSS-файлам
                     use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
                     'css-loader', 'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
+                
+                    
                 },
                 {
                     test: /\.(png|jpg|gif|ico|svg)$/,
@@ -49,7 +53,7 @@ module.exports = {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'style.[contenthash].css',
+                filename: './scc/[name].[contenthash].css',
             }),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
@@ -62,7 +66,14 @@ module.exports = {
             new HtmlWebpackPlugin({ // настроили плагин
                 inject: false,
                 template: './src/index.html',
-                filename: 'index.html'
+                filename: 'index.html',
+                chunks: ['main']
+            }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/analytics.html',
+                filename: 'analytics.html',
+                chunks: ['analytics']
             }),
             new WebpackMd5Hash(),
             

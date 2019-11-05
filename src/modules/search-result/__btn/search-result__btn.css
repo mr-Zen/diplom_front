@@ -1,0 +1,17 @@
+.search-result__btn {
+    border-radius: 80px;
+    background: #FFFFFF;
+    width: 288px;
+    height: 64px;
+    border: 1px solid #D1D2D6;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-result__btn:hover {
+    opacity: 0.9;
+}
