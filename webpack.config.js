@@ -12,7 +12,8 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: { main: './src/index.js',
-        analytics: './src/analytics.js'
+        analytics: './src/analytics.js',
+        client: './src/client.js'
             },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -53,7 +54,7 @@ module.exports = {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: './scc/[name].[contenthash].css',
+                filename: './css/[name].[contenthash].css',
             }),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
@@ -74,6 +75,12 @@ module.exports = {
                 template: './src/analytics.html',
                 filename: 'analytics.html',
                 chunks: ['analytics']
+            }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/client.html',
+                filename: 'client.html',
+                chunks: ['client']
             }),
             new WebpackMd5Hash(),
             
