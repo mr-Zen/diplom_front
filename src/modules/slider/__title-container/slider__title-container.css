@@ -1,0 +1,8 @@
+.slider__title-container {
+    width: 1232px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 72px 0 64px;
+}

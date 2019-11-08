@@ -27,7 +27,13 @@ module.exports = {
                 },
                 {
                     test: /\.css$/i, // применять это правило только к CSS-файлам
-                    use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
+                    use: [isDev ? 'style-loader' : {
+                       loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                         },
+                    }, 
+                    
                     'css-loader', 'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
                 
                     
@@ -40,7 +46,8 @@ module.exports = {
                              loader: 'image-webpack-loader',
                              options: {
                                  bypassOnDebug: true, // webpack@1.x
-                                 disable: true // webpack@2.x and newer
+                                 disable: true, // webpack@2.x and newer
+                                // publicPath: '../',
                               }
                          },
                     ],
@@ -64,19 +71,19 @@ module.exports = {
                 },
                 canPrint: true
            }),
-            new HtmlWebpackPlugin({ // настроили плагин
+            new HtmlWebpackPlugin({ 
                 inject: false,
                 template: './src/index.html',
                 filename: 'index.html',
                 chunks: ['main']
             }),
-            new HtmlWebpackPlugin({ // настроили плагин
+            new HtmlWebpackPlugin({ 
                 inject: false,
                 template: './src/analytics.html',
                 filename: 'analytics.html',
                 chunks: ['analytics']
             }),
-            new HtmlWebpackPlugin({ // настроили плагин
+            new HtmlWebpackPlugin({ 
                 inject: false,
                 template: './src/client.html',
                 filename: 'client.html',

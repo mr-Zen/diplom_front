@@ -12,6 +12,7 @@
 @import url(../modules/autor/__subtitle/_client/autor__subtitle_client.css);
 @import url(../modules/use-technology/use-technology.css);
 @import url(../modules/autor-container/autor-container.css);
+@import url(../modules/slider/slider.css);
 @import url(../modules/footer/footer.css);
 
 *{box-sizing: border-box;}
