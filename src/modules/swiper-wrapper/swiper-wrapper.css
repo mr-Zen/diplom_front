@@ -1,8 +1,9 @@
 @import url(../swiper-slide/swiper-slide.css);
 
 .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+    /* overflow: hidden; */
+    height: 400px;
     
 }
