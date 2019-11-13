@@ -26,9 +26,13 @@
             NewsAnalyzer
           </div>
           <div class="header__links">
-            <a class="header__link header__link_active" href="./index.html">Главная</a>
+            <a class="header__link header__link_active" href="./index.html"
+              >Главная</a
+            >
             <!-- В Js назначить активный класс  header__link_active-->
-            <a class="header__link header__link_active" href="./client.html">О проекте</a>
+            <a class="header__link header__link_active" href="./client.html"
+              >О проекте</a
+            >
           </div>
         </div>
       </header>
@@ -39,11 +43,12 @@
         новостях за прошедшую неделю.
       </h2>
       <div class="search-container">
-        <form >
-            <input
+        <form>
+          <input
             placeholder="Введите тему новости"
             class="search-container__input"
-            type="text" required
+            type="text"
+            required
           />
           <button class="search-container__btn">Искать</button>
         </form>
@@ -52,36 +57,57 @@
 
     <section class="preloader">
       <div class="preloader__box">
-          <i class="preloader__circle"></i>
-          <h3 class="preloader__title">Идет поиск новостей ...</h3> <!-- Позиционирование? -->
+        <i class="preloader__circle"></i>
+        <h3 class="preloader__title">Идет поиск новостей ...</h3>
+        <!-- Позиционирование? -->
       </div>
     </section>
 
     <section class="no-result">
-        <div class="no-result__box">
-          <img class="no-result__img" src="<%=require('./images/not-found_v1.svg')%>" alt="">
-          <h2 class="no-result__title">Ничего не найдено</h2>
-          <p class="no-result__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
-        </div>
-      </section>
+      <div class="no-result__box">
+        <img
+          class="no-result__img"
+          src="<%=require('./images/not-found_v1.svg')%>"
+          alt=""
+        />
+        <h2 class="no-result__title">Ничего не найдено</h2>
+        <p class="no-result__subtitle">
+          К сожалению по вашему запросу ничего не найдено.
+        </p>
+      </div>
+    </section>
 
     <section class="search-result">
       <div class="search-result__head">
         <h2 class="search-result__title">Результаты поиска</h2>
-        <a href="" class="search-result__subtitle">Посмотреть аналитику ></a>
+        <a href="./analytics.html" class="search-result__subtitle"
+          >Посмотреть аналитику ></a
+        >
       </div>
       <div class="cards">
         <div class="card-container">
-          <div class="card-container__img" style="background-image: url()"></div>
+          <div
+            class="card-container__img"
+            style="background-image: url()"
+          ></div>
           <div class="card-container__text">
             <p class="card-container__date">5 ноября 2019</p>
-            <h2 class="card-container__title">Национальное достояние – парки</h2>
-            <p class="card-container__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <p class="card-container__source">Лента.ру</p> <!-- Уточнить про абсолютное аозиционирование -->
+            <h2 class="card-container__title">
+              Национальное достояние – парки
+            </h2>
+            <p class="card-container__subtitle">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+              начала складываться система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="card-container__source">Лента.ру</p>
+            <!-- Уточнить про абсолютное аозиционирование -->
           </div>
         </div>
       </div>
-      <div class="search-result__btn-box"><button class="search-result__btn">Показать еще</button></div>
+      <div class="search-result__btn-box">
+        <button class="search-result__btn">Показать еще</button>
+      </div>
     </section>
 
     <section class="autor-container">
@@ -108,17 +134,17 @@
       <div class="footer__container">
         <p class="footer__copy">&copy; Supersite</p>
         <div class="footer__menu">
-          <a href="" class="footer__menu-item">Главная</a>
-          <a href="" class="footer__menu-item">О проекте</a>
-          <a href="" class="footer__menu-item">Яндекс.Практикум</a>
+          <a href="./index.html" class="footer__menu-item">Главная</a>
+          <a href="./client.html" class="footer__menu-item">О проекте</a>
+          <a href="https://praktikum.yandex.ru" target="blank" class="footer__menu-item">Яндекс.Практикум</a>
         </div>
         <div class="footer__social">
-          <a href="#" target="blank" class="footer__social-icon"
-            ><img src="<%=require('./images/vector2.svg')%>" alt=""
+          <a href="https://github.com/mr-Zen" target="blank" class="footer__social-icon"
+            ><img src="<%=require('./images/vector2.svg')%>" alt="github"
           /></a>
-          <!-- уточнить по размерам ссылки и img-->
-          <a href="#" target="blank" class="footer__social-icon"
-            ><img src="<%=require('./images/vector.svg')%>" alt=""
+        
+          <a href="https://www.facebook.com/yandex.praktikum/" target="blank" class="footer__social-icon"
+            ><img src="<%=require('./images/vector.svg')%>" alt="facebook"
           /></a>
         </div>
       </div>

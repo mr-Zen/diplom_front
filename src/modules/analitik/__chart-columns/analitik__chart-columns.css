@@ -1,0 +1,11 @@
+.analitik__chart-columns {
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+}
+
+.analitik__chart-columns:first-child {
+width: 104px;
+}

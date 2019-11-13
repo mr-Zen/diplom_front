@@ -1,0 +1,9 @@
+.analitik__crumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 40px 0 80px;
+}

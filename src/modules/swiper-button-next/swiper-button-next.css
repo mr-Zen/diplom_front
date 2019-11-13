@@ -1,5 +1,24 @@
 .swiper-button-next {
     position: absolute;
-    right: 24px;
-    top: 126px;
+    top: 0;
+    right: 0;
+    width: 88px;
+    height: 288px;
+    margin: 0;
+    background: linear-gradient(to right, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    cursor: pointer;
+    
 }
+
+.swiper-button-next::after {
+    content: none;
+}
+
+.swiper-button-next svg {
+   transition-duration: 0.6s;
+   opacity: 0.3;
+}
+.swiper-button-next:hover svg {
+   
+    opacity: 1;
+ }

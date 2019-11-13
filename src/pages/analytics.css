@@ -1,4 +1,16 @@
-body {
-    color: red;
-    font-size: 15px;
-}
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../modules/body/body.css);
+@import url(../modules/header/header.css);
+@import url(../modules/header/__logo/_color/header__logo_color.css);
+@import url(../modules/header/__link/_color/header__link_color.css);
+@import url(../modules/analitik/analitik.css);
+@import url(../modules/footer/footer.css);
+
+
+
+
+
+
+
+*{box-sizing: border-box;}

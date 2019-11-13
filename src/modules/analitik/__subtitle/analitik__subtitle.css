@@ -1,0 +1,11 @@
+@import url(./_bold/analitik__subtitle_bold.css);
+
+.analitik__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 4px;
+}
+
+.analitik__subtitle:last-child {
+margin-bottom: 0;
+}

@@ -1,0 +1,19 @@
+.analitik__chart-ruler-block{
+    width: 25%;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    text-align: right;
+    text-indent: 100%;
+    margin: 0;
+}
+
+
+.analitik__chart-ruler-block:first-child{
+  width: 104px;
+  flex-shrink: 0;
+}
+
+.analitik__chart-ruler-block:last-child{
+  text-indent: 0;
+}
