@@ -6,3 +6,11 @@
     justify-content: space-between;
     padding-top: 80px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .use-technology__container {
+        width: calc(100% - 80px);
+        flex-direction: column;
+        padding-top: 40px;
+    }
+}

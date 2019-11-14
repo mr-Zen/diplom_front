@@ -9,3 +9,9 @@
 .analitik__chart-columns:first-child {
 width: 104px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .analitik__chart-columns {
+       margin: 0;
+    }
+  }

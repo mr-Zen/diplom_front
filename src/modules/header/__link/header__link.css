@@ -17,3 +17,10 @@
     color: #fff;
     padding-bottom: 23px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .header__link {
+        
+        line-height: 62px;
+    }
+}

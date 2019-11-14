@@ -1,5 +1,14 @@
 .analitik__head {
-    width: 1232px;
+    max-width: 1232px;
+    min-width: 320px;
+    width: 100%;
     margin: auto;
     padding-bottom: 80px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .analitik__head{
+       width: calc(100% - 80px);
+       padding-bottom: 40px;
+    }
+  }

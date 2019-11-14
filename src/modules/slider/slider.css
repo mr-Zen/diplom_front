@@ -1,6 +1,7 @@
 @import url(./__title-container/slider__title-container.css);
 @import url(./__title/slider__title.css);
 @import url(./__link/slider__link.css);
+@import url(../swiper-container/swiper-container.css);
 @import url(../swiper-wrapper/swiper-wrapper.css);
 @import url(../swiper-button-next/swiper-button-next.css);
 @import url(../swiper-button-prev/swiper-button-prev.css);
@@ -11,3 +12,9 @@
     background: #F5F6F7;
     height: 606px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .slider{
+        height: 462px;
+    }
+  }

@@ -1,3 +1,9 @@
 .no-result__img {
     margin: 80px auto 24px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .no-result__img {
+      margin: 40px auto 20px;
+    }
+  }
