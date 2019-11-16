@@ -13,3 +13,9 @@
       padding: 22px 0 40px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-result__btn-box{
+      padding: 13px 16px 44px;
+    }
+  }

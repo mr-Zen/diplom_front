@@ -14,3 +14,9 @@
         margin-top: 24px;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-container {
+        width: 288px;
+    }
+}

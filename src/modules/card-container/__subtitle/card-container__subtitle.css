@@ -12,3 +12,11 @@
       overflow: hidden;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .card-container__subtitle{
+      margin: 0 16px 5px 16px;
+      overflow: hidden;
+      height: 88px;
+    }
+  }

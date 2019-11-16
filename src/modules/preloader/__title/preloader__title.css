@@ -11,3 +11,9 @@
       margin-bottom: 40px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .preloader__title{
+       margin-bottom: 30px;
+    }
+  }

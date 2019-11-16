@@ -10,3 +10,12 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .autor__subtitle_client {
+        margin: 0 0 16px 0;
+}
+    .autor__subtitle_client:last-child {
+        margin-bottom: 0;
+    }
+  }

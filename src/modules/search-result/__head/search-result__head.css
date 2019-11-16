@@ -14,3 +14,12 @@
         margin-bottom: 32px;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-result__head {
+       flex-direction: column;
+       padding: 0 16px 0;
+       margin-bottom: 37px;
+       align-items: baseline;
+    }
+  }

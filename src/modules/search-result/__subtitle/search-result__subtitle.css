@@ -5,3 +5,16 @@
     color: #1A1B22;
     text-decoration: none;
 }
+
+.search-result__subtitle::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 2px #000000 solid;
+    transform: rotate(45deg);
+    border-left: 2px transparent solid;
+    border-bottom: 2px transparent solid;
+    position: relative;
+    top: -1px;
+}

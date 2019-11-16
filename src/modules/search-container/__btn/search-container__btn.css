@@ -29,4 +29,12 @@
        width: 160px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-container__btn {
+       height: 56px;
+       width: 288px;
+       top: 72px;
+    }
+  }
   

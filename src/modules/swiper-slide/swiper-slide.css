@@ -30,3 +30,12 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .swiper-slide{
+    width: 288px;
+    height: 264px;
+    margin-right: 8px;
+    padding: 16px;
+  }
+}
+

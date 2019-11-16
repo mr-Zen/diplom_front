@@ -7,8 +7,12 @@
     <meta name="description" content="Аналитика происходящих в мире событий" />
     <meta name="author" content="Артем Комяк" />
     <title>Аналитика</title>
-    <link rel="icon" href="favicon.png" />
-    <!-- Исправить!!!-->
+    <link
+      rel="icon"
+      href="<%=require('./images/Group.jpg')%>"
+      type="image/jpeg"
+    />
+
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>"
@@ -40,7 +44,9 @@
         <div class="analitik__main">
           <ul class="analitik__crumbs">
             <li>
-              <a class="analitik__crumb analitik__crumb_link" href="./index.html"
+              <a
+                class="analitik__crumb analitik__crumb_link"
+                href="./index.html"
                 >Главная /</a
               >
             </li>
@@ -70,7 +76,6 @@
           </div>
 
           <div class="analitik__chart-container">
-            
             <div class="analitik__chart">
               <div class="analitik__chart-ruler">
                 <p class="analitik__chart-ruler-block">0</p>
@@ -79,42 +84,72 @@
                 <p class="analitik__chart-ruler-block">75</p>
                 <p class="analitik__chart-ruler-block">100</p>
               </div>
-            <div class="analitik__chart-item"><p class="analitik__chart-date">19, пн</p><div class="analitik__chart-box"><div class="analitik__chart-percent">25</div></div></div>
-            <div class="analitik__chart-item"><p class="analitik__chart-date">19, пн</p><div class="analitik__chart-box"><div class="analitik__chart-percent">25</div></div></div>
-            <div class="analitik__chart-item"><p class="analitik__chart-date">19, пн</p><div class="analitik__chart-box"><div class="analitik__chart-percent">25</div></div></div>
-            <div class="analitik__chart-item"><p class="analitik__chart-date">19, пн</p><div class="analitik__chart-box"><div class="analitik__chart-percent">25</div></div></div>
+              <div class="analitik__chart-item">
+                <p class="analitik__chart-date">19, пн</p>
+                <div class="analitik__chart-box">
+                  <div class="analitik__chart-percent">25</div>
+                </div>
+              </div>
+              <div class="analitik__chart-item">
+                <p class="analitik__chart-date">19, пн</p>
+                <div class="analitik__chart-box">
+                  <div class="analitik__chart-percent">25</div>
+                </div>
+              </div>
+              <div class="analitik__chart-item">
+                <p class="analitik__chart-date">19, пн</p>
+                <div class="analitik__chart-box">
+                  <div class="analitik__chart-percent">25</div>
+                </div>
+              </div>
+              <div class="analitik__chart-item">
+                <p class="analitik__chart-date">19, пн</p>
+                <div class="analitik__chart-box">
+                  <div class="analitik__chart-percent">25</div>
+                </div>
+              </div>
             </div>
-            
           </div>
           <div class="analitik__chart-ruler">
-              <p class="analitik__chart-ruler-block">0</p>
-              <p class="analitik__chart-ruler-block">25</p>
-              <p class="analitik__chart-ruler-block">50</p>
-              <p class="analitik__chart-ruler-block">75</p>
-              <p class="analitik__chart-ruler-block">100</p>
-            </div>
+            <p class="analitik__chart-ruler-block">0</p>
+            <p class="analitik__chart-ruler-block">25</p>
+            <p class="analitik__chart-ruler-block">50</p>
+            <p class="analitik__chart-ruler-block">75</p>
+            <p class="analitik__chart-ruler-block">100</p>
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-        <div class="footer__container">
-          <p class="footer__copy">&copy; Supersite</p>
-          <div class="footer__menu">
-            <a href="./index.html" class="footer__menu-item">Главная</a>
-            <a href="./client.html" class="footer__menu-item">О проекте</a>
-            <a href="https://praktikum.yandex.ru" target="blank" class="footer__menu-item">Яндекс.Практикум</a>
-          </div>
-          <div class="footer__social">
-            <a href="https://github.com/mr-Zen" target="blank" class="footer__social-icon"
-              ><img src="<%=require('./images/vector2.svg')%>" alt="github"
-            /></a>
-          
-            <a href="https://www.facebook.com/yandex.praktikum/" target="blank" class="footer__social-icon"
-              ><img src="<%=require('./images/vector.svg')%>" alt="facebook"
-            /></a>
-          </div>
+      <div class="footer__container">
+        <p class="footer__copy">&copy; Supersite</p>
+        <div class="footer__menu">
+          <a href="./index.html" class="footer__menu-item">Главная</a>
+          <a href="./client.html" class="footer__menu-item">О проекте</a>
+          <a
+            href="https://praktikum.yandex.ru"
+            target="blank"
+            class="footer__menu-item"
+            >Яндекс.Практикум</a
+          >
         </div>
-      </footer>
+        <div class="footer__social">
+          <a
+            href="https://github.com/mr-Zen"
+            target="blank"
+            class="footer__social-icon"
+            ><img src="<%=require('./images/vector2.svg')%>" alt="github"
+          /></a>
+
+          <a
+            href="https://www.facebook.com/yandex.praktikum/"
+            target="blank"
+            class="footer__social-icon"
+            ><img src="<%=require('./images/vector.svg')%>" alt="facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
     <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
   </body>
 </html>

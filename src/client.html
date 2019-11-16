@@ -10,15 +10,17 @@
     />
     <meta name="author" content="Артем Комяк" />
     <title>Информация для клиентов</title>
-    <link rel="icon" href="favicon.png" />
-    <!-- Исправить!!!
-        вебпак настройка браузеров!-->
+    <link
+      rel="icon"
+      href="<%=require('./images/Group.jpg')%>"
+      type="image/jpeg"
+    />
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.client.css %>"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   </head>
   <body>
     <header class="header header__logo_color">
@@ -172,7 +174,6 @@
         <img
           class="autor__img"
           src="<%=require('./images/EArAXHFUEAEU0vn.jpg')%>"
-          class="autor-foto"
           alt="Фото автора проекта"
         />
         <div class="autor__info">
@@ -194,7 +195,7 @@
           class="slider__link"
           target="blank"
           href="https://github.com/mr-Zen/diplom_front/commits/level-1"
-          >Открыть в GitHub ></a
+          >Открыть в GitHub</a
         >
       </div>
 
@@ -208,7 +209,7 @@
               <img
                 class="swiper-slide__autor-img"
                 src="<%=require('./images/image-01.png')%>"
-                alt=""
+                alt="Автор"
               />
               <div class="swiper-slide__autor-container">
                 <h3 class="swiper-slide__autor-name">Антон Долин</h3>
@@ -226,7 +227,7 @@
               <img
                 class="swiper-slide__autor-img"
                 src="<%=require('./images/image-01.png')%>"
-                alt=""
+                alt="Автор"
               />
               <div class="swiper-slide__autor-container">
                 <h3 class="swiper-slide__autor-name">Антон Долин</h3>
@@ -244,7 +245,7 @@
               <img
                 class="swiper-slide__autor-img"
                 src="<%=require('./images/image-01.png')%>"
-                alt=""
+                alt="Автор"
               />
               <div class="swiper-slide__autor-container">
                 <h3 class="swiper-slide__autor-name">Антон Долин</h3>
@@ -262,7 +263,7 @@
               <img
                 class="swiper-slide__autor-img"
                 src="<%=require('./images/image-01.png')%>"
-                alt=""
+                alt="Автор"
               />
               <div class="swiper-slide__autor-container">
                 <h3 class="swiper-slide__autor-name">Антон Долин</h3>
@@ -280,7 +281,7 @@
               <img
                 class="swiper-slide__autor-img"
                 src="<%=require('./images/image-01.png')%>"
-                alt=""
+                alt="Автор"
               />
               <div class="swiper-slide__autor-container">
                 <h3 class="swiper-slide__autor-name">Антон Долин</h3>
@@ -399,17 +400,27 @@
       <div class="footer__container">
         <p class="footer__copy">&copy; Supersite</p>
         <div class="footer__menu">
-            <a href="./index.html" class="footer__menu-item">Главная</a>
-            <a href="./client.html" class="footer__menu-item">О проекте</a>
-            <a href="https://praktikum.yandex.ru" target="blank" class="footer__menu-item">Яндекс.Практикум</a>
+          <a href="./index.html" class="footer__menu-item">Главная</a>
+          <a href="./client.html" class="footer__menu-item">О проекте</a>
+          <a
+            href="https://praktikum.yandex.ru"
+            target="blank"
+            class="footer__menu-item"
+            >Яндекс.Практикум</a
           >
         </div>
         <div class="footer__social">
-          <a href="https://github.com/mr-Zen" target="blank" class="footer__social-icon"
+          <a
+            href="https://github.com/mr-Zen"
+            target="blank"
+            class="footer__social-icon"
             ><img src="<%=require('./images/vector2.svg')%>" alt="github"
           /></a>
-          
-          <a href="https://www.facebook.com/yandex.praktikum/" target="blank" class="footer__social-icon"
+
+          <a
+            href="https://www.facebook.com/yandex.praktikum/"
+            target="blank"
+            class="footer__social-icon"
             ><img src="<%=require('./images/vector.svg')%>" alt="facebook"
           /></a>
         </div>
@@ -417,26 +428,26 @@
     </footer>
     <script src="<%= htmlWebpackPlugin.files.chunks.client.entry %>"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
-slidesPerView: 'auto',
-loopFillGroupWithBlank: true,
-pagination: {
-el: '.swiper-pagination',
-bulletClass: 'swiper-pagination-bullet',
-type: 'bullets',
-clickable: true,
-    },
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-    },
-  });
-</script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true
+        },
+        slidesPerView: "auto",
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          bulletClass: "swiper-pagination-bullet",
+          type: "bullets",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
   </body>
 </html>

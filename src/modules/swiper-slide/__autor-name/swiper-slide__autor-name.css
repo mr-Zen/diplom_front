@@ -11,3 +11,10 @@
         margin: 0;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .swiper-slide__autor-name{
+      font-size: 20px;
+      margin: 0;
+    }
+  }

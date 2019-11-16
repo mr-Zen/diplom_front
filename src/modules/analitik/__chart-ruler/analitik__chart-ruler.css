@@ -8,3 +8,9 @@
        margin-bottom: 0;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+   .analitik__chart-ruler{
+     display: none;
+   }
+ }

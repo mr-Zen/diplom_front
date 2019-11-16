@@ -11,3 +11,9 @@
        padding: 40px 0 49px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .analitik__res-title{
+      padding: 24px 0 16px;
+    }
+  }

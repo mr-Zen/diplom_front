@@ -4,3 +4,10 @@
         height: 48px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .swiper-slide__autor-img{
+    width: 48px;
+    height: 48px;
+  }
+}

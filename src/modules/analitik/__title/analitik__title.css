@@ -12,3 +12,11 @@
        line-height: 34px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .analitik__title{
+      font-size: 30px;
+      line-height: 34px;
+      padding-bottom: 16px;
+    }
+  }

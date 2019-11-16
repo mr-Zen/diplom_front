@@ -10,9 +10,7 @@
     />
     <meta name="author" content="Артем Комяк" />
     <title>Сервис для анализа происходящих в мире событий</title>
-    <link rel="icon" href="favicon.png" />
-    <!-- Исправить!!!
-    вебпак настройка браузеров!-->
+    <link rel="icon" href="<%=require('./images/Group.jpg')%>" type="image/jpeg">
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
@@ -69,7 +67,7 @@
         <img
           class="no-result__img"
           src="<%=require('./images/not-found_v1.svg')%>"
-          alt=""
+          alt="no-result"
         />
         <h2 class="no-result__title">Ничего не найдено</h2>
         <p class="no-result__subtitle">
@@ -82,7 +80,7 @@
       <div class="search-result__head">
         <h2 class="search-result__title">Результаты поиска</h2>
         <a href="./analytics.html" class="search-result__subtitle"
-          >Посмотреть аналитику ></a
+          >Посмотреть аналитику</a
         >
       </div>
       <div class="cards">
@@ -192,7 +190,6 @@
         <img
           class="autor__img"
           src="<%=require('./images/EArAXHFUEAEU0vn.jpg')%>"
-          class="autor-foto"
           alt="Фото автора проекта"
         />
         <div class="autor__info">
