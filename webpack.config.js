@@ -2,13 +2,12 @@
 const webpack = require('webpack');
 const path = require('path');
 // подключаем path к конфигу вебпак
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Подключили к проекту плагин
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// подключаем плагин
 const isDev = process.env.NODE_ENV === 'development';
-// создаем переменную для development-сборки
+
 
 module.exports = {
     entry: { main: './src/index.js',
@@ -20,13 +19,13 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{ // тут описываются правила
-            test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-            use: { loader: "babel-loader" }, // весь JS обрабатывается пакетом babel-loader
-            exclude: /node_modules/ // исключает папку node_modules
+        rules: [{ 
+            test: /\.js$/, 
+            use: { loader: "babel-loader" }, 
+            exclude: /node_modules/ 
                 },
                 {
-                    test: /\.css$/i, // применять это правило только к CSS-файлам
+                    test: /\.css$/i, 
                     use: [isDev ? 'style-loader' : {
                        loader: MiniCssExtractPlugin.loader,
                         options: {
@@ -34,7 +33,7 @@ module.exports = {
                          },
                     }, 
                     
-                    'css-loader', 'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
+                    'css-loader', 'postcss-loader'] 
                 
                     
                 },
@@ -47,7 +46,7 @@ module.exports = {
                              options: {
                                  bypassOnDebug: true, // webpack@1.x
                                  disable: true, // webpack@2.x and newer
-                                // publicPath: '../',
+                                
                               }
                          },
                     ],
