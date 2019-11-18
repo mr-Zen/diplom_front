@@ -16,6 +16,7 @@
   padding: 24px;
   flex-shrink: 0;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .swiper-slide:last-child {
