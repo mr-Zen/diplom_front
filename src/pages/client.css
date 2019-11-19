@@ -10,6 +10,7 @@
 @import url(../modules/autor/__title/_client/autor__title_client.css);
 @import url(../modules/autor/__subtitle/autor__subtitle.css);
 @import url(../modules/autor/__subtitle/_client/autor__subtitle_client.css);
+@import url(../modules/autor/__subtitle/_merge/autor__subtitle_merge.css);
 @import url(../modules/use-technology/use-technology.css);
 @import url(../modules/autor-container/autor-container.css);
 @import url(../modules/slider/slider.css);

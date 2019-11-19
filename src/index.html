@@ -10,7 +10,11 @@
     />
     <meta name="author" content="Артем Комяк" />
     <title>Сервис для анализа происходящих в мире событий</title>
-    <link rel="icon" href="<%=require('./images/Group.jpg')%>" type="image/jpeg">
+    <link
+      rel="icon"
+      href="<%=require('./images/Group.jpg')%>"
+      type="image/jpeg"
+    />
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
@@ -27,27 +31,27 @@
             <a class="header__link header__link_active" href="./index.html"
               >Главная</a
             >
-            
-            <a class="header__link" href="./client.html"
-              >О проекте</a
-            >
+
+            <a class="header__link" href="./client.html">О проекте</a>
           </div>
         </div>
       </header>
 
       <h1 class="search__title">
-        Что в мире
-        творится?
+        Что в мире творится?
       </h1>
       <h2 class="search__subtitle">
         Введите в поиске любую тему и узнайте, насколько популярной она была в
         новостях за прошедшую неделю.
       </h2>
       <form class="search-container">
-        <input minlength="3" maxlength="20"
+        <input
+          minlength="3"
+          maxlength="20"
           placeholder="Введите тему новости"
           class="search-container__input"
-          type="text" pattern= "^([А-ЯЁа-яё0-9]-?\s?)+$"
+          type="text"
+          pattern="^([А-ЯЁа-яё0-9]-?\s?)+$"
           required
         />
         <button class="search-container__btn">Искать</button>
@@ -58,7 +62,6 @@
       <div class="preloader__box">
         <i class="preloader__circle"></i>
         <h3 class="preloader__title">Идет поиск новостей ...</h3>
-        
       </div>
     </section>
 
@@ -90,7 +93,7 @@
             style="background-image: url()"
           ></div>
           <div class="card-container__text">
-            <p class="card-container__date">5 ноября 2019</p>
+            <span class="card-container__date">5 ноября 2019</span>
             <h2 class="card-container__title">
               Национальное достояние – парки
             </h2>
@@ -100,7 +103,6 @@
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
             <p class="card-container__source">Лента.ру</p>
-            
           </div>
         </div>
         <div class="card-container">
@@ -109,7 +111,7 @@
             style="background-image: url()"
           ></div>
           <div class="card-container__text">
-            <p class="card-container__date">5 ноября 2019</p>
+            <span class="card-container__date">5 ноября 2019</span>
             <h2 class="card-container__title">
               Национальное достояние – парки
             </h2>
@@ -119,7 +121,6 @@
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
             <p class="card-container__source">Лента.ру</p>
-            
           </div>
         </div>
         <div class="card-container">
@@ -128,7 +129,7 @@
             style="background-image: url()"
           ></div>
           <div class="card-container__text">
-            <p class="card-container__date">5 ноября 2019</p>
+            <span class="card-container__date">5 ноября 2019</span>
             <h2 class="card-container__title">
               Национальное достояние – парки
             </h2>
@@ -138,7 +139,6 @@
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
             <p class="card-container__source">Лента.ру</p>
-            
           </div>
         </div>
         <div class="card-container">
@@ -147,7 +147,7 @@
             style="background-image: url()"
           ></div>
           <div class="card-container__text">
-            <p class="card-container__date">5 ноября 2019</p>
+            <span class="card-container__date">5 ноября 2019</span>
             <h2 class="card-container__title">
               Национальное достояние – парки
             </h2>
@@ -157,7 +157,6 @@
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
             <p class="card-container__source">Лента.ру</p>
-            
           </div>
         </div>
         <div class="card-container">
@@ -166,7 +165,7 @@
             style="background-image: url()"
           ></div>
           <div class="card-container__text">
-            <p class="card-container__date">5 ноября 2019</p>
+            <span class="card-container__date">5 ноября 2019</span>
             <h2 class="card-container__title">
               Национальное достояние – парки
             </h2>
@@ -176,7 +175,6 @@
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
             <p class="card-container__source">Лента.ру</p>
-            
           </div>
         </div>
       </div>
@@ -184,22 +182,33 @@
         <button class="search-result__btn">Показать еще</button>
       </div>
     </section>
-
     <section class="autor-container">
       <div class="autor">
-        <img
-          class="autor__img"
-          src="<%=require('./images/EArAXHFUEAEU0vn.jpg')%>"
-          alt="Фото автора проекта"
-        />
+        <picture>
+          <source
+            srcset="<%=require('./images/ava_mobile.jpg')%>"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="<%=require('./images/ava_tablet.jpg')%>"
+            media="(max-width: 1280px)"
+          />
+          <img
+            class="autor__img"
+            src="<%=require('./images/ava.jpg')%>"
+            alt="Фото автора проекта"
+          />
+        </picture>
         <div class="autor__info">
           <h2 class="autor__title">Об авторе</h2>
           <p class="autor__subtitle">
             Это блок с описанием автора проекта. Здесь следует указать, как вас
             зовут, чем вы занимаетесь, какими технологиями разработки владеете.
-            <br />Также можно рассказать о процессе обучения в Практикуме, чему
-            вы тут научились, и чем можете помочь потенциальным заказчикам.
-          </p> <!--   Разбить на параграфы, на всех страницах -->
+          </p>
+          <p class="autor__subtitle">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
+          </p>
         </div>
       </div>
     </section>

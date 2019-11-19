@@ -29,15 +29,10 @@
           NewsAnalyzer
         </div>
         <div class="header__links">
-          <a
-            class="header__link header__link_black"
-            href="./index.html"
+          <a class="header__link header__link_black" href="./index.html"
             >Главная</a
           >
-          <!-- В Js назначить активный класс  header__link_active-->
-          <a
-            class="header__link header__link_color"
-            href="./client.html"
+          <a class="header__link header__link_color" href="./client.html"
             >О проекте</a
           >
         </div>
@@ -80,7 +75,7 @@
         <h2 class="use-technology__title">Используемые технологии</h2>
         <ul class="use-technology__items">
           <li class="use-technology__item">
-            <p class="use-technology__item-title">HTML</p>
+            <span class="use-technology__item-title">HTML</span>
             <div class="use-technology__img">
               <svg
                 width="120"
@@ -88,19 +83,13 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g >
-                  <g
-                    
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  >
+                <g>
+                  <g fill-rule="evenodd" clip-rule="evenodd">
                     <path
-                      
                       d="M16 14h88l-7.603 87.532L60 111l-36.071-9.468L16 14z"
                       fill="#D1D2D6"
                     />
                     <path
-                      
                       d="M38.553 32.145h48.15l-2.265 26.981-1.743 27.394-22.637 5.9-20.98-5.936-1.508-14.23 9.724-1.02.815 7.691 12.054 3.411 13.22-3.446.97-15.255H53.277v-9.73h21.787l1.01-12.031h-37.52v-9.729z"
                       fill="#F5F6F7"
                     />
@@ -110,7 +99,7 @@
             </div>
           </li>
           <li class="use-technology__item">
-            <p class="use-technology__item-title">CSS</p>
+            <span class="use-technology__item-title">CSS</span>
             <div class="use-technology__img">
               <svg
                 width="120"
@@ -134,7 +123,7 @@
             </div>
           </li>
           <li class="use-technology__item">
-            <p class="use-technology__item-title">Java Script</p>
+            <span class="use-technology__item-title">Java Script</span>
             <div class="use-technology__img">
               <svg
                 width="120"
@@ -151,7 +140,7 @@
             </div>
           </li>
           <li class="use-technology__item">
-            <p class="use-technology__item-title">Webpack</p>
+            <span class="use-technology__item-title">Webpack</span>
             <div class="use-technology__img">
               <svg
                 width="120"
@@ -171,18 +160,30 @@
     </section>
     <section class="autor-container">
       <div class="autor">
-        <img
-          class="autor__img"
-          src="<%=require('./images/EArAXHFUEAEU0vn.jpg')%>"
-          alt="Фото автора проекта"
-        />
+        <picture>
+          <source
+            srcset="<%=require('./images/ava_mobile.jpg')%>"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="<%=require('./images/ava_tablet.jpg')%>"
+            media="(max-width: 1280px)"
+          />
+          <img
+            class="autor__img"
+            src="<%=require('./images/ava.jpg')%>"
+            alt="Фото автора проекта"
+          />
+        </picture>
         <div class="autor__info">
           <h2 class="autor__title">Об авторе</h2>
-          <p class="autor__subtitle">
+          <p class="autor__subtitle autor__subtitle_merge">
             Это блок с описанием автора проекта. Здесь следует указать, как вас
             зовут, чем вы занимаетесь, какими технологиями разработки владеете.
-            <br />Также можно рассказать о процессе обучения в Практикуме, чему
-            вы тут научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+          <p class="autor__subtitle autor__subtitle_merge">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
           </p>
         </div>
       </div>
@@ -204,7 +205,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <p class="swiper-slide__date">11 ноября</p>
+            <span class="swiper-slide__date">11 ноября</span>
             <div class="swiper-slide__autor">
               <img
                 class="swiper-slide__autor-img"
@@ -212,8 +213,8 @@
                 alt="Автор"
               />
               <div class="swiper-slide__autor-container">
-                <h3 class="swiper-slide__autor-name">Антон Долин</h3>
-                <p class="swiper-slide__autor-mail">anton@yandex.ru</p>
+                <span class="swiper-slide__autor-name">Антон Долин</span>
+                <span class="swiper-slide__autor-mail">anton@yandex.ru</span>
               </div>
             </div>
             <p class="swiper-slide__autor-title">
@@ -222,7 +223,7 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <p class="swiper-slide__date">11 ноября</p>
+            <span class="swiper-slide__date">11 ноября</span>
             <div class="swiper-slide__autor">
               <img
                 class="swiper-slide__autor-img"
@@ -230,8 +231,8 @@
                 alt="Автор"
               />
               <div class="swiper-slide__autor-container">
-                <h3 class="swiper-slide__autor-name">Антон Долин</h3>
-                <p class="swiper-slide__autor-mail">anton@yandex.ru</p>
+                <span class="swiper-slide__autor-name">Антон Долин</span>
+                <span class="swiper-slide__autor-mail">anton@yandex.ru</span>
               </div>
             </div>
             <p class="swiper-slide__autor-title">
@@ -240,7 +241,7 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <p class="swiper-slide__date">11 ноября</p>
+            <span class="swiper-slide__date">11 ноября</span>
             <div class="swiper-slide__autor">
               <img
                 class="swiper-slide__autor-img"
@@ -248,8 +249,8 @@
                 alt="Автор"
               />
               <div class="swiper-slide__autor-container">
-                <h3 class="swiper-slide__autor-name">Антон Долин</h3>
-                <p class="swiper-slide__autor-mail">anton@yandex.ru</p>
+                <span class="swiper-slide__autor-name">Антон Долин</span>
+                <span class="swiper-slide__autor-mail">anton@yandex.ru</span>
               </div>
             </div>
             <p class="swiper-slide__autor-title">
@@ -258,7 +259,7 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <p class="swiper-slide__date">11 ноября</p>
+            <span class="swiper-slide__date">11 ноября</span>
             <div class="swiper-slide__autor">
               <img
                 class="swiper-slide__autor-img"
@@ -266,8 +267,8 @@
                 alt="Автор"
               />
               <div class="swiper-slide__autor-container">
-                <h3 class="swiper-slide__autor-name">Антон Долин</h3>
-                <p class="swiper-slide__autor-mail">anton@yandex.ru</p>
+                <span class="swiper-slide__autor-name">Антон Долин</span>
+                <span class="swiper-slide__autor-mail">anton@yandex.ru</span>
               </div>
             </div>
             <p class="swiper-slide__autor-title">
@@ -276,7 +277,7 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <p class="swiper-slide__date">11 ноября</p>
+            <span class="swiper-slide__date">11 ноября</span>
             <div class="swiper-slide__autor">
               <img
                 class="swiper-slide__autor-img"
@@ -284,8 +285,8 @@
                 alt="Автор"
               />
               <div class="swiper-slide__autor-container">
-                <h3 class="swiper-slide__autor-name">Антон Долин</h3>
-                <p class="swiper-slide__autor-mail">anton@yandex.ru</p>
+                <span class="swiper-slide__autor-name">Антон Долин</span>
+                <span class="swiper-slide__autor-mail">anton@yandex.ru</span>
               </div>
             </div>
             <p class="swiper-slide__autor-title">
