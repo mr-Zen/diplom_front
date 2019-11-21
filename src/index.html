@@ -44,17 +44,17 @@
         Введите в поиске любую тему и узнайте, насколько популярной она была в
         новостях за прошедшую неделю.
       </h2>
-      <form class="search-container">
+      <form class="search-container" novalidate name="search">
         <input
-          minlength="3"
-          maxlength="20"
+        minlength="3" maxlength="40"
           placeholder="Введите тему новости"
           class="search-container__input"
           type="text"
-          pattern="^([А-ЯЁа-яё0-9]-?\s?)+$"
+          name="news"
           required
         />
-        <button class="search-container__btn">Искать</button>
+        <span class="error-message" id="errorText">Нужно ввести ключевое слово</span>
+        <button class="search-container__btn" id="searchBtn">Искать</button>
       </form>
     </section>
 
