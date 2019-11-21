@@ -1,0 +1,18 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../modules/body/body.css);
+@import url(../modules/search/search.css);
+@import url(../modules/header/header.css);
+@import url(../modules/header/__link/_active/header__link_active.css);
+@import url(../modules/search-container/search-container.css);
+@import url(../modules/preloader/preloader.css);
+@import url(../modules/no-result/no-result.css);
+@import url(../modules/search-result/search-result.css);
+@import url(../modules/cards/cards.css);
+@import url(../modules/card-container/card-container.css);
+@import url(../modules/autor-container/autor-container.css);
+@import url(../modules/footer/footer.css);
+
+
+
+*{box-sizing: border-box;}

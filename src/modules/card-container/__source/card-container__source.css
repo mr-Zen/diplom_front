@@ -1,0 +1,26 @@
+.card-container__source {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #B6BCBF;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .card-container__source {
+      left: 16px;
+      bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .card-container__source{
+      left: 16px;
+      bottom: 16px;
+    }
+  }

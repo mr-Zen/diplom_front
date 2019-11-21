@@ -2,30 +2,40 @@
 const webpack = require('webpack');
 const path = require('path');
 // подключаем path к конфигу вебпак
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Подключили к проекту плагин
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// подключаем плагин
 const isDev = process.env.NODE_ENV === 'development';
-// создаем переменную для development-сборки
+
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { main: './src/index.js',
+        analytics: './src/analytics.js',
+        client: './src/client.js'
+            },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{ // тут описываются правила
-            test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-            use: { loader: "babel-loader" }, // весь JS обрабатывается пакетом babel-loader
-            exclude: /node_modules/ // исключает папку node_modules
+        rules: [{ 
+            test: /\.js$/, 
+            use: { loader: "babel-loader" }, 
+            exclude: /node_modules/ 
                 },
                 {
-                    test: /\.css$/i, // применять это правило только к CSS-файлам
-                    use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
-                    'css-loader', 'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
+                    test: /\.css$/i, 
+                    use: [isDev ? 'style-loader' : {
+                       loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                         },
+                    }, 
+                    
+                    'css-loader', 'postcss-loader'] 
+                
+                    
                 },
                 {
                     test: /\.(png|jpg|gif|ico|svg)$/,
@@ -35,7 +45,8 @@ module.exports = {
                              loader: 'image-webpack-loader',
                              options: {
                                  bypassOnDebug: true, // webpack@1.x
-                                 disable: true // webpack@2.x and newer
+                                 disable: true, // webpack@2.x and newer
+                                
                               }
                          },
                     ],
@@ -49,7 +60,7 @@ module.exports = {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'style.[contenthash].css',
+                filename: './css/[name].[contenthash].css',
             }),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
@@ -59,10 +70,23 @@ module.exports = {
                 },
                 canPrint: true
            }),
-            new HtmlWebpackPlugin({ // настроили плагин
+            new HtmlWebpackPlugin({ 
                 inject: false,
                 template: './src/index.html',
-                filename: 'index.html'
+                filename: 'index.html',
+                chunks: ['main']
+            }),
+            new HtmlWebpackPlugin({ 
+                inject: false,
+                template: './src/analytics.html',
+                filename: 'analytics.html',
+                chunks: ['analytics']
+            }),
+            new HtmlWebpackPlugin({ 
+                inject: false,
+                template: './src/client.html',
+                filename: 'client.html',
+                chunks: ['client']
             }),
             new WebpackMd5Hash(),
             

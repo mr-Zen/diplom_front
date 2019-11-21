@@ -1,0 +1,19 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../modules/body/body.css);
+@import url(../modules/header/header.css);
+@import url(../modules/header/_color/header_color.css);
+@import url(../modules/header/__link/_color/header__link_color.css);
+@import url(../modules/client-info/client-info.css);
+@import url(../modules/client-info/__container/client-info__container.css);
+@import url(../modules/autor/__title/autor__title.css);
+@import url(../modules/autor/__title/_client/autor__title_client.css);
+@import url(../modules/autor/__subtitle/autor__subtitle.css);
+@import url(../modules/autor/__subtitle/_client/autor__subtitle_client.css);
+@import url(../modules/autor/__subtitle/_merge/autor__subtitle_merge.css);
+@import url(../modules/use-technology/use-technology.css);
+@import url(../modules/autor-container/autor-container.css);
+@import url(../modules/slider/slider.css);
+@import url(../modules/footer/footer.css);
+
+*{box-sizing: border-box;}

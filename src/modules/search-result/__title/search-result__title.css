@@ -1,0 +1,22 @@
+.search-result__title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .search-result__title {
+       font-size: 30px;
+       line-height: 34px;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-result__title {
+       font-size: 30px;
+       line-height: 34px;
+       width: 271px;
+       margin-bottom: 16px;
+    }
+  }

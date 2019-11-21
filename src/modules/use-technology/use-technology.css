@@ -1,0 +1,9 @@
+@import url('./__container/use-technology__container.css');
+@import url('./__title/use-technology__title.css');
+@import url('./__item/use-technology__item.css');
+@import url('./__items/use-technology__items.css');
+@import url('./__item-title/use-technology__item-title.css');
+
+.use-technology {
+    background: #F5F6F7
+}

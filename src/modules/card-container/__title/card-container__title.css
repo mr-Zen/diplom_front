@@ -1,0 +1,22 @@
+.card-container__title {
+    margin: 0 0 16px 24px;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .card-container__title {
+      margin: 0 16px 10px 16px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .card-container__title{
+      margin: 0 16px 10px 16px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }

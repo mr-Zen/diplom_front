@@ -1,0 +1,26 @@
+.use-technology__container {
+    width: 1232px;
+    height: 334px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .use-technology__container {
+        width: calc(100% - 80px);
+        flex-direction: column;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .use-technology__container {
+        width: 100%;
+        padding: 32px 16px 0;
+        flex-direction: column;
+        height: auto;
+}
+    
+  }

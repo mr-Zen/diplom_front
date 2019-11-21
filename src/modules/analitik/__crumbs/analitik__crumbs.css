@@ -1,0 +1,22 @@
+.analitik__crumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 40px 0 80px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .analitik__crumbs {
+     padding: 32px 0 64px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .analitik__crumbs{
+    display: none;
+  }
+}

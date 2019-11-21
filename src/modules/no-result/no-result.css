@@ -1,0 +1,8 @@
+@import url('./__box/no-result__box.css');
+@import url('./__img/no-result__img.css');
+@import url('./__title/no-result__title.css');
+@import url('./__subtitle/no-result__subtitle.css');
+
+.no-result {
+    background: #F5F6F7;
+}

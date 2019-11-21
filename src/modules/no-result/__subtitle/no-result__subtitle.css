@@ -1,0 +1,14 @@
+.no-result__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    width: 356px;
+    text-align: center;
+    margin:0 auto 80px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .no-result__subtitle {
+       margin-bottom: 40px;
+    }
+  }

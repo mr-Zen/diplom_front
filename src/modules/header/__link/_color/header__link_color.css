@@ -1,0 +1,8 @@
+.header__link_color {
+    color: #000;
+    border-bottom-style: inset;
+}
+
+.header__link_color:hover {
+    color: black;
+}
