@@ -15,8 +15,6 @@
       href="<%=require('./images/Group.jpg')%>"
       type="image/jpeg"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.client.css %>"
@@ -427,27 +425,5 @@
       </div>
     </footer>
     <script src="<%= htmlWebpackPlugin.files.chunks.client.entry %>"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          draggable: true
-        },
-        slidesPerView: "auto",
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          bulletClass: "swiper-pagination-bullet",
-          type: "bullets",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      });
-    </script>
   </body>
 </html>

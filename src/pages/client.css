@@ -13,6 +13,7 @@
 @import url(../modules/autor/__subtitle/_merge/autor__subtitle_merge.css);
 @import url(../modules/use-technology/use-technology.css);
 @import url(../modules/autor-container/autor-container.css);
+@import url(../../node_modules/swiper/css/swiper.min.css);
 @import url(../modules/slider/slider.css);
 @import url(../modules/footer/footer.css);
 
