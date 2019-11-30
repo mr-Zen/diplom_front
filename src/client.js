@@ -1,2 +1,4 @@
 import './pages/client.css';
-import {swiper} from './js-modules/swiper'
+import {renderGit} from './js-modules/render_slides';
+
+renderGit()

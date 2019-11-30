@@ -2,18 +2,10 @@ import './pages/index.css';
 import validInput from './js-modules/valid_input';
 import validSubmit from './js-modules/valid_submit';
 import {apiNews} from './js-modules/api_news';
-import { form } from './js-modules/variable/variable';
+import { form, carsdBox, formInput, addCardsBtn} from './js-modules/variable/variable';
+import searchClick from './js-modules/search_click';
+import { CardList } from './js-modules/card_list';
+import renderCardsBtn from './js-modules/render_cards'
+import Card from './js-modules/card';
+import { getMonth } from './js-modules/correction_date';
 
-// let date = new Date;
-// let sevenDays = date.getTime()/1000- 7 * 86400;
-// console.log(Math.round(sevenDays))
-// console.log(new Date(sevenDays*1000))
-// let date = new Date;
-// let sevenDate = Math.round(new Date().getTime()/1000-7 * 86400);
-// let dateS = new Date(sevenDate*1000)
-// console.log(dateS)
-// console.log(new Date(dateS).getFullYear())
-// console.log(new Date(dateS).getDate())
-// console.log(new Date(dateS).getMonth() + 1)
-// let date = new Date(sevenDate)
-// console.log(Date.parse(date))

@@ -1,0 +1,4 @@
+.card-container__text {
+    max-height: 200px;
+    overflow: hidden;
+}

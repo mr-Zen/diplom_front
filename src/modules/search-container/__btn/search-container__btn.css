@@ -1,4 +1,4 @@
-/* @import url(./_disabled/search-container__btn_disabled.css); */
+
 .search-container__btn {
     font-weight: 500;
     width: 168px;
@@ -12,7 +12,7 @@
     right: 0;
     color: #FFF;
     font-size: 18px;
-    outline: none;
+    
 }
 
 .search-container__btn:hover {

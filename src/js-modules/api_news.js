@@ -1,5 +1,6 @@
 import validSubmit from './valid_submit';
 import{config} from './variable/variable'
+ 
 
 export class ApiNews {
     constructor({apiKey, from, to, pageSize}) {
@@ -7,6 +8,7 @@ export class ApiNews {
         this.from = from;
         this.to = to;
         this.pageSize = pageSize;
+        
     }
     getNews(q) {
         return(
@@ -24,6 +26,8 @@ export class ApiNews {
             })
         )
     }
+    
+    
 }
 
 export const apiNews = new ApiNews(config)

@@ -4,6 +4,7 @@
     line-height: 24px;
     color: #1A1B22;
     text-decoration: none;
+    display: none;
 }
 
 .search-result__subtitle::after {
