@@ -6,7 +6,7 @@ import { getMonth } from "./correction_date";
 let finish = 6;
 let i = 3;
 //Функция отрисовки по 3 карточки из массива
-function render(array) {
+export function render(array) {
   for (i; i < finish; i++) {
     if (finish >= array.length) {
       addCardsBtn.setAttribute("style", "display:none");

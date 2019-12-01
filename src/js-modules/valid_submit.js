@@ -30,6 +30,8 @@ export default form.addEventListener("submit", function(event) {
           localStorage.clear();
           localStorage.setItem("keywords", formInput.value);
           localStorage.setItem("res", JSON.stringify(res));
+          const result =  JSON.parse(localStorage.getItem("res"));
+          new CardList(cardsBox, result.articles.slice(0,3))
         }
         return res;
       })
@@ -40,7 +42,7 @@ export default form.addEventListener("submit", function(event) {
           preLoader.setAttribute("style", "display:none");
           searchBox.setAttribute("style", "display:none");
         } else {
-          new CardList(cardsBox, res.articles.slice(0, 3)),
+          
             preLoader.setAttribute("style", "display:none"),
             addCardsBtn.setAttribute("style", "display:inline-block");
           noResult.setAttribute("style", "display:none");
