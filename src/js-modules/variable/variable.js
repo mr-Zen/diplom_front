@@ -8,7 +8,7 @@ export const linkAnalytic = document.querySelector(".search-result__subtitle");
 export const cardsBox = document.querySelector(".cards");
 export const addCardsBtn = document.querySelector(".search-result__btn")
 //7 дней от текущей даты
-const sevenDays = Math.round(new Date().getTime()/1000-6 * 86400);
+const sevenDays = Math.round(new Date().getTime()/1000-7 * 86400);
 const dateString = new Date(sevenDays*1000);
 const year = new Date(dateString).getFullYear();
 const month = new Date(dateString).getMonth() + 1;
@@ -23,11 +23,5 @@ export const config = {
     
 }
 export const noResult = document.querySelector(".no-result");
-
-
-
-// // Обращение к localStorage
-// let rest = JSON.parse(localStorage.getItem("[object Object]"));
-// console.log(rest.articles) 
 
 

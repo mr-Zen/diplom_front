@@ -1,7 +1,5 @@
-import validSubmit from './valid_submit';
 import{config} from './variable/variable'
  
-
 export class ApiNews {
     constructor({apiKey, from, to, pageSize}) {
         this.apiKey = apiKey;
