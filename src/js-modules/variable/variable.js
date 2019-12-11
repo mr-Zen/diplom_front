@@ -23,5 +23,3 @@ export const config = {
     
 }
 export const noResult = document.querySelector(".no-result");
-
-

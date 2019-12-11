@@ -1,6 +1,5 @@
 import "./pages/index.css";
 import validInput from "./js-modules/valid_input";
-import { apiNews } from "./js-modules/api_news";
 import {
   addCardsBtn,
   cardsBox,
@@ -10,7 +9,8 @@ import {
   formInput,
   errorMessage,
   noResult,
-  preLoader
+  preLoader,
+  config
 } from "./js-modules/variable/variable";
 import searchClick from "./js-modules/search_click";
 import { CardList } from "./js-modules/card_list";
@@ -18,9 +18,14 @@ import Card from "./js-modules/card";
 import { getMonth } from "./js-modules/correction_date";
 import { nullImage } from "./js-modules/helpers";
 import { resError } from "./js-modules/res_error";
+import { ApiNews } from "./js-modules/api_news";
 // Переменные для отрисовки карточек
 let firstCards = 3;
 let lastCards = firstCards + 3;
+
+const apiNews = new ApiNews(config);
+// Callback для CardList
+const addedCard = (...args) => new Card(...args);
 
 //Функция валидации поля ввода и отрисовки новостных карточек
 form.addEventListener("submit", function(event) {
@@ -39,7 +44,7 @@ form.addEventListener("submit", function(event) {
           localStorage.setItem("keywords", formInput.value);
           localStorage.setItem("res", JSON.stringify(res));
           const result = JSON.parse(localStorage.getItem("res"));
-          new CardList(cardsBox, result.articles.slice(0, 3));
+          new CardList(cardsBox, result.articles.slice(0, 3), addedCard);
           firstCards = 3;
           lastCards = firstCards + 3;
           if (res.articles.length > 3) {
@@ -84,7 +89,7 @@ function reloadRender() {
   if (results != null && results.articles.length > 0) {
     searchBox.setAttribute("style", "display:block");
     linkAnalytic.setAttribute("style", "display:block");
-    new CardList(cardsBox, results.articles.slice(0, 3));
+    new CardList(cardsBox, results.articles.slice(0, 3), addedCard);
   }
 }
 reloadRender();

@@ -1,7 +1,8 @@
-import { apiGit } from "./api_git";
-import GitCards from "./cards_git";
-import Swiper from "swiper";
 import { getMonth } from "./correction_date";
+import { ApiGit } from "./api_git";
+import { GitCards } from "./cards_git";
+import Swiper from "swiper";
+const apiGit = new ApiGit();
 //Рендер карточек коммитов
 export function renderGit() {
   apiGit.getCommit().then(res =>

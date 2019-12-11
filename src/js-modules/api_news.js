@@ -1,12 +1,9 @@
-import{config} from './variable/variable'
- 
-export class ApiNews {
+ export class ApiNews {
     constructor({apiKey, from, to, pageSize}) {
         this.apiKey = apiKey;
         this.from = from;
         this.to = to;
-        this.pageSize = pageSize;
-        
+        this.pageSize = pageSize; 
     }
     getNews(q) {
         return(
@@ -28,4 +25,4 @@ export class ApiNews {
     
 }
 
-export const apiNews = new ApiNews(config)
+

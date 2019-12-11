@@ -1,11 +1,10 @@
-export default class GitCards {
+export class GitCards {
     constructor(date, ava, name, mail, text ) {
       
       this.cardElement = this.getCard(date, ava, name, mail, text );
       
     }
     getCard(date, ava, name, mail, text ) {
-      
       return `<div class="swiper-slide">
       <span class="swiper-slide__date">${date}</span>
       <div class="swiper-slide__autor">

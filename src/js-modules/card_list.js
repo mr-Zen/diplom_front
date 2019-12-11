@@ -1,18 +1,21 @@
-import { cardsBox } from "./variable/variable";
-import Card from "./card";
 import { getMonth } from "./correction_date";
 import { nullImage } from "./helpers";
 
 export class CardList {
-  constructor(container, array) {
-    this.container = container;
+  constructor(container, array, callback) {
     this.array = array;
-    this.render(array);
+    this.container = container;
+    this.getCard = callback;
+    this.render();
   }
-  render(array) {
-    array.forEach(function(item) {
+  addCard(...args) {
+    const { cardElement } = this.getCard(...args);
+    this.container.insertAdjacentHTML("beforeend", cardElement);
+  }
+  render() {
+    this.array.forEach(item => {
       const fixMonth = new Date(item.publishedAt);
-      const { cardElement } = new Card(
+      this.addCard(
         item.url,
         nullImage(item.urlToImage),
         `${fixMonth.getDate()} ${getMonth(fixMonth)}, ${fixMonth.getFullYear()}`,
@@ -20,7 +23,6 @@ export class CardList {
         item.description,
         item.source.name
       );
-      cardsBox.insertAdjacentHTML("beforeend", cardElement);
     });
   }
 }

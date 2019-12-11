@@ -1,4 +1,4 @@
-class ApiGit {
+export class ApiGit {
     constructor() {
           
     }
@@ -21,5 +21,5 @@ class ApiGit {
     
     
   }
-  export const apiGit = new ApiGit()
+  
   
