@@ -1,4 +1,4 @@
-import { resError } from "./res_error.js";
+import { resError } from "./res-error.js";
 import { searchBtn } from "./variable/variable.js";
 
 // Проверка на значения полей

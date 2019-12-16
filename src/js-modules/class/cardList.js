@@ -1,5 +1,4 @@
-import { getMonth } from "./correction_date";
-import { nullImage } from "./helpers";
+import { nullImage, getMonth } from "../helpers";
 
 export class CardList {
   constructor(container, array, callback) {

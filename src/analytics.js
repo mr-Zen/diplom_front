@@ -1,5 +1,5 @@
 import "./pages/analytics.css";
-import { getMonth } from "./js-modules/correction_date";
+import { getMonth } from "./js-modules/helpers";
 
 const localData = JSON.parse(localStorage.getItem("res"));
 const dateAnalytics = document.querySelectorAll(".analitik__chart-date");

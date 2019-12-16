@@ -4,6 +4,9 @@
     line-height: 30px;
     font-weight: normal;
     max-height: 90px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
     font-family: 'Roboto Slab';
 }

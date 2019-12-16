@@ -1,5 +1,5 @@
 import "./pages/index.css";
-import validInput from "./js-modules/valid_input";
+import validInput from "./js-modules/valid-input";
 import {
   addCardsBtn,
   cardsBox,
@@ -12,13 +12,13 @@ import {
   preLoader,
   config
 } from "./js-modules/variable/variable";
-import searchClick from "./js-modules/search_click";
-import { CardList } from "./js-modules/card_list";
-import Card from "./js-modules/card";
-import { getMonth } from "./js-modules/correction_date";
+import searchClick from "./js-modules/search-click";
+import { CardList } from "./js-modules/class/cardList";
+import Card from "./js-modules/class/card";
+import { getMonth } from "./js-modules/helpers";
 import { nullImage } from "./js-modules/helpers";
-import { resError } from "./js-modules/res_error";
-import { ApiNews } from "./js-modules/api_news";
+import { resError } from "./js-modules/res-error";
+import { ApiNews } from "./js-modules/api/apiNews";
 // Переменные для отрисовки карточек
 let firstCards = 3;
 let lastCards = firstCards + 3;

@@ -1,4 +1,4 @@
-import { minValue } from "./valid_value";
+import { minValue } from "./valid-value";
 import { errorMessage, formInput } from "./variable/variable";
 
 function validate() {
