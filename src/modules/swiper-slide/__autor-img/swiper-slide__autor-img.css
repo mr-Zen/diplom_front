@@ -1,7 +1,16 @@
+.swiper-slide__autor-img{
+  width: 64px;
+  height: 64px;
+  border-radius: 1000px;
+}
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     .swiper-slide__autor-img {
         width: 48px;
         height: 48px;
+        border-radius: 1000px;
   }
 }
 
@@ -9,5 +18,6 @@
   .swiper-slide__autor-img{
     width: 48px;
     height: 48px;
+    border-radius: 1000px;
   }
 }

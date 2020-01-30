@@ -10,6 +10,7 @@
     line-height: 24px;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
 .search-result__btn:hover {

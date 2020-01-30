@@ -19,4 +19,10 @@
 
 **Используемые технологии:** HTML, CSS, JavaScript, GIT, WEBPACK.
 
-
+**Развертывание проекта:**
++ Установка Webpack
++ Копирование репозитория
++ `npm i`
++ `npm run dev` локальный сервер для разработки
++ `npm run build` сборка бандла для продакшена
++ `npm run deploy` деплой на GitHub Pages

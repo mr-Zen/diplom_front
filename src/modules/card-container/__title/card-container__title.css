@@ -1,8 +1,14 @@
 .card-container__title {
-    margin: 0 0 16px 24px;
+    margin: 0 24px 16px 24px;
     font-size: 26px;
     line-height: 30px;
     font-weight: normal;
+    max-height: 90px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-family: 'Roboto Slab';
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {

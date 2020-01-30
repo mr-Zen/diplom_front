@@ -44,17 +44,18 @@
         Введите в поиске любую тему и узнайте, насколько популярной она была в
         новостях за прошедшую неделю.
       </h2>
-      <form class="search-container">
+      <form class="search-container" novalidate name="search">
         <input
-          minlength="3"
-          maxlength="20"
+        minlength="3" maxlength="40"
           placeholder="Введите тему новости"
           class="search-container__input"
           type="text"
-          pattern="^([А-ЯЁа-яё0-9]-?\s?)+$"
+          name="news"
           required
+          id="input"
         />
-        <button class="search-container__btn">Искать</button>
+        <span class="error-message" id="errorText">Нужно ввести ключевое слово</span>
+        <button class="search-container__btn" id="searchBtn" disabled>Искать</button>
       </form>
     </section>
 
@@ -87,96 +88,7 @@
         >
       </div>
       <div class="cards">
-        <div class="card-container">
-          <div
-            class="card-container__img"
-            style="background-image: url()"
-          ></div>
-          <div class="card-container__text">
-            <span class="card-container__date">5 ноября 2019</span>
-            <h2 class="card-container__title">
-              Национальное достояние – парки
-            </h2>
-            <p class="card-container__subtitle">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="card-container__source">Лента.ру</p>
-          </div>
-        </div>
-        <div class="card-container">
-          <div
-            class="card-container__img"
-            style="background-image: url()"
-          ></div>
-          <div class="card-container__text">
-            <span class="card-container__date">5 ноября 2019</span>
-            <h2 class="card-container__title">
-              Национальное достояние – парки
-            </h2>
-            <p class="card-container__subtitle">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="card-container__source">Лента.ру</p>
-          </div>
-        </div>
-        <div class="card-container">
-          <div
-            class="card-container__img"
-            style="background-image: url()"
-          ></div>
-          <div class="card-container__text">
-            <span class="card-container__date">5 ноября 2019</span>
-            <h2 class="card-container__title">
-              Национальное достояние – парки
-            </h2>
-            <p class="card-container__subtitle">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="card-container__source">Лента.ру</p>
-          </div>
-        </div>
-        <div class="card-container">
-          <div
-            class="card-container__img"
-            style="background-image: url()"
-          ></div>
-          <div class="card-container__text">
-            <span class="card-container__date">5 ноября 2019</span>
-            <h2 class="card-container__title">
-              Национальное достояние – парки
-            </h2>
-            <p class="card-container__subtitle">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="card-container__source">Лента.ру</p>
-          </div>
-        </div>
-        <div class="card-container">
-          <div
-            class="card-container__img"
-            style="background-image: url()"
-          ></div>
-          <div class="card-container__text">
-            <span class="card-container__date">5 ноября 2019</span>
-            <h2 class="card-container__title">
-              Национальное достояние – парки
-            </h2>
-            <p class="card-container__subtitle">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="card-container__source">Лента.ру</p>
-          </div>
-        </div>
+        
       </div>
       <div class="search-result__btn-box">
         <button class="search-result__btn">Показать еще</button>

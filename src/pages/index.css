@@ -5,6 +5,8 @@
 @import url(../modules/header/header.css);
 @import url(../modules/header/__link/_active/header__link_active.css);
 @import url(../modules/search-container/search-container.css);
+@import url(../modules/error-message/error-message.css);
+@import url(../modules/error-message/_active/error-message_active.css);
 @import url(../modules/preloader/preloader.css);
 @import url(../modules/no-result/no-result.css);
 @import url(../modules/search-result/search-result.css);
